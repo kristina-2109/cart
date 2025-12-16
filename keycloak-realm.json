@@ -1,0 +1,55 @@
+{
+  "realm": "shopping",
+  "enabled": true,
+  "accessTokenLifespan": 1800,
+  "accessTokenLifespanForImplicitFlow": 1800,
+  "roles": {
+    "realm": [
+      { "name": "CUSTOMER" },
+      { "name": "ADMIN" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "shopping-cart",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true
+    }
+  ],
+  "users": [
+    {
+      "username": "sara",
+      "firstName": "Sara",
+      "lastName": "Saric",
+      "email": "sara.saric@gmail.com",
+      "enabled": true,
+      "credentials": [
+        { "type": "password", "value": "sarinPass", "temporary": false }
+      ],
+      "realmRoles": ["CUSTOMER"]
+    },
+    {
+      "username": "marin",
+      "firstName": "Marin",
+      "lastName": "Marinkovic",
+      "email": "marin.marinkovic@gmail.com",
+      "enabled": true,
+      "credentials": [
+        { "type": "password", "value": "marinovPass", "temporary": false }
+      ],
+      "realmRoles": ["CUSTOMER"]
+    },
+    {
+      "username": "adminko",
+      "firstName": "Adminko",
+      "lastName": "Adminic",
+      "email": "adminko.adminic@gmail.com",
+      "enabled": true,
+      "credentials": [
+        { "type": "password", "value": "adminkovPass", "temporary": false }
+      ],
+      "realmRoles": ["ADMIN"]
+    }
+  ]
+}
